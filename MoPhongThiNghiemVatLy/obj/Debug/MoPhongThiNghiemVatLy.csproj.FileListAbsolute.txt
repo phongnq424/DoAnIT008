@@ -1,0 +1,168 @@
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.AssemblyReference.cache
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.g.cs
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\App.g.cs
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.cache
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.lref
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe.config
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.pdb
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.baml
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.g.resources
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.Properties.Resources.resources
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.GenerateResource.cache
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.CoreCompileInputs.cache
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.exe
+C:\Users\trana\source\repos\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.pdb
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe.config
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.pdb
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.AssemblyReference.cache
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.g.cs
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\App.g.cs
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.cache
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.lref
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.baml
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.g.resources
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.Properties.Resources.resources
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.GenerateResource.cache
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.CoreCompileInputs.cache
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.exe
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.pdb
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe.config
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.pdb
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.AssemblyReference.cache
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.g.cs
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\App.g.cs
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.cache
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.lref
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.baml
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.g.resources
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.Properties.Resources.resources
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.GenerateResource.cache
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.CoreCompileInputs.cache
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.exe
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.pdb
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe.config
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.pdb
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.AssemblyReference.cache
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.g.cs
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\App.g.cs
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.cache
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.lref
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.baml
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.g.resources
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.Properties.Resources.resources
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.GenerateResource.cache
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.CoreCompileInputs.cache
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.exe
+D:\_LapTrinhTrucQuan\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.pdb
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe.config
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.pdb
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.AssemblyReference.cache
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.g.cs
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\App.g.cs
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.cache
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.lref
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.baml
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.g.resources
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.Properties.Resources.resources
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.GenerateResource.cache
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.CoreCompileInputs.cache
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.exe
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.pdb
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\Newtonsoft.Json.dll
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\Newtonsoft.Json.xml
+C:\Users\phong\Downloads\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongT.BCF69ECD.Up2Date
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe.config
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.pdb
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\Newtonsoft.Json.dll
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\bin\Debug\Newtonsoft.Json.xml
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.AssemblyReference.cache
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.g.cs
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\App.g.cs
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.cache
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.lref
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.baml
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.g.resources
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.Properties.Resources.resources
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.GenerateResource.cache
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.CoreCompileInputs.cache
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongT.BCF69ECD.Up2Date
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.exe
+D:\Lap Trinh Truc Quan\12_05_2024_After\12_05_2024\MoPhongThiNghiemVatLy\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.pdb
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe.config
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.pdb
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\bin\Debug\Newtonsoft.Json.dll
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\bin\Debug\Newtonsoft.Json.xml
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.AssemblyReference.cache
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.g.cs
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\App.g.cs
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.cache
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.lref
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.baml
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.g.resources
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.Properties.Resources.resources
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.GenerateResource.cache
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.CoreCompileInputs.cache
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\MoPhongT.BCF69ECD.Up2Date
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.exe
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy127\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.pdb
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe.config
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.pdb
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\bin\Debug\Newtonsoft.Json.dll
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\bin\Debug\Newtonsoft.Json.xml
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.AssemblyReference.cache
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.g.cs
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\App.g.cs
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.cache
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.lref
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.baml
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.g.resources
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.Properties.Resources.resources
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.GenerateResource.cache
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.CoreCompileInputs.cache
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongT.BCF69ECD.Up2Date
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.exe
+C:\Users\trana\Downloads\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.pdb
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe.config
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.pdb
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\bin\Debug\Newtonsoft.Json.dll
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\bin\Debug\Newtonsoft.Json.xml
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.AssemblyReference.cache
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.g.cs
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\App.g.cs
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.cache
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.lref
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.baml
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.g.resources
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.Properties.Resources.resources
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.GenerateResource.cache
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.CoreCompileInputs.cache
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongT.BCF69ECD.Up2Date
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.exe
+D:\_LapTrinhTrucQuan\MoPhongThiNghiemVatLy1213_Tuan\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy1213\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.pdb
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe.config
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.exe
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\bin\Debug\MoPhongThiNghiemVatLy.pdb
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\bin\Debug\Newtonsoft.Json.dll
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\bin\Debug\Newtonsoft.Json.xml
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.AssemblyReference.cache
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.g.cs
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\App.g.cs
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.cache
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy_MarkupCompile.lref
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\MainWindow.baml
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.g.resources
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.Properties.Resources.resources
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.GenerateResource.cache
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.csproj.CoreCompileInputs.cache
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\MoPhongT.BCF69ECD.Up2Date
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.exe
+C:\Users\trana\Downloads\1213_AfterEditForTuan\1213_AfterEditForTuan\MoPhongThiNghiemVatLy\obj\Debug\MoPhongThiNghiemVatLy.pdb
