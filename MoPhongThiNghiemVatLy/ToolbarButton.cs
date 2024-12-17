@@ -90,6 +90,11 @@ namespace MoPhongThiNghiemVatLy
                 MessageBox.Show("Tắt chế độ vôn kế giùm cái r làm gì thì làm!");
                 return;
             }
+            if (MainWindow.Instance.isLightMode)
+            {
+                MessageBox.Show("Điện thì cứ chạy mà hay muốn thêm quá! Giật điện đó ạ, tắt kiểm tra đèn đi");
+                return;
+            }    
             BackUpComponent(); // backup trước khi làm gì nhé
 
             MainWindow.Instance.seriesResistorCount++; // Tăng đt nối tiếp
@@ -119,6 +124,11 @@ namespace MoPhongThiNghiemVatLy
             if (MainWindow.Instance.isVoltmeterMode)
             {
                 MessageBox.Show("Tắt chế độ vôn kế giùm cái r làm gì thì làm!");
+                return;
+            }
+            if (MainWindow.Instance.isLightMode)
+            {
+                MessageBox.Show("Điện thì cứ chạy mà hay muốn thêm quá! Giật điện đó ạ, tắt kiểm tra đèn đi");
                 return;
             }
             BackUpComponent(); // backup trước khi làm gì nhé
@@ -175,6 +185,11 @@ namespace MoPhongThiNghiemVatLy
                 MessageBox.Show("Tắt chế độ vôn kế giùm cái r làm gì thì làm!");
                 return;
             }
+            if (MainWindow.Instance.isLightMode)
+            {
+                MessageBox.Show("Điện thì cứ chạy mà hay muốn thêm quá! Giật điện đó ạ, tắt kiểm tra đèn đi");
+                return;
+            }
             BackUpComponent(); // backup trước khi làm gì nhé
             MainWindow.Instance.index++;
             MainWindow.Instance._seriesResistorCount[MainWindow.Instance.index] = -1;
@@ -191,6 +206,11 @@ namespace MoPhongThiNghiemVatLy
             if (MainWindow.Instance.isVoltmeterMode)
             {
                 MessageBox.Show("Tắt chế độ vôn kế giùm cái r làm gì thì làm!");
+                return;
+            }
+            if (MainWindow.Instance.isLightMode)
+            {
+                MessageBox.Show("Điện thì cứ chạy mà hay muốn thêm quá! Giật điện đó ạ, tắt kiểm tra đèn đi");
                 return;
             }
             BackUpComponent(); // backup trước khi làm gì nhé
@@ -211,6 +231,11 @@ namespace MoPhongThiNghiemVatLy
                 MessageBox.Show("Tắt chế độ vôn kế giùm cái r làm gì thì làm!");
                 return;
             }
+            if (MainWindow.Instance.isLightMode)
+            {
+                MessageBox.Show("Điện thì cứ chạy mà hay muốn thêm quá! Giật điện đó ạ, tắt kiểm tra đèn đi");
+                return;
+            }
             BackUpComponent(); // backup trước khi làm gì nhé
             MainWindow.Instance.index++;
             MainWindow.Instance._seriesResistorCount[MainWindow.Instance.index] = -3;
@@ -226,6 +251,11 @@ namespace MoPhongThiNghiemVatLy
             if (!MainWindow.Instance.isSourceAdded && MainWindow.Instance._seriesResistorCount.Count < 1)
             {
                 MessageBox.Show("Đã vẽ mạch chó đâu mà add vôn kế!");
+                return;
+            }
+            if (MainWindow.Instance.isLightMode)
+            {
+                MessageBox.Show("Điện thì cứ chạy mà hay muốn thêm quá! Giật điện đó ạ, tắt kiểm tra đèn đi");
                 return;
             }
             MainWindow.Instance.isVoltmeterMode = !MainWindow.Instance.isVoltmeterMode;
@@ -316,8 +346,12 @@ namespace MoPhongThiNghiemVatLy
             // Điều khiển electron
             if (MainWindow.Instance.isLightMode) // Nếu bật chế độ sáng
             {
-                Drawing.DrawRealElectron(CircuitCanvas,0.5); // Gọi hàm bắt đầu tạo và animate electron
-            }          
+                Drawing.DrawRealElectron(CircuitCanvas, 0.5); // Gọi hàm bắt đầu tạo và animate electron
+            }
+            else // Nếu tắt chế độ sáng (chế độ tối)
+            {
+                Drawing.StopDrawingElectrons(); // Dừng timer (dừng tạo electron)
+            }
         }
 
         public static void CalculateButton_Click(Canvas CircuitCanvas, object sender)
@@ -339,6 +373,16 @@ namespace MoPhongThiNghiemVatLy
             if (!MainWindow.Instance.isSourceAdded)
             {
                 MessageBox.Show("Cậu ơi! Màn hình chưa có cái gì để xóa");
+                return;
+            }
+            if (MainWindow.Instance.isLightMode)
+            {
+                MessageBox.Show("Điện thì cứ chạy mà hay muốn thêm quá! Giật điện đó ạ, tắt kiểm tra đèn đi");
+                return;
+            }
+            if (MainWindow.Instance.isVoltmeterMode)
+            {
+                MessageBox.Show("Tắt chế độ vôn kế giùm cái r làm gì thì làm!");
                 return;
             }
             BackUpComponent(); // backup trước khi xóa nhé

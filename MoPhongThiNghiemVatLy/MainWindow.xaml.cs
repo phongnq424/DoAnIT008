@@ -63,8 +63,9 @@ namespace MoPhongThiNghiemVatLy
         public List<Brush> LightColorArray = new List<Brush>();
         public List<Point> beginEparallel = new List<Point>();
         public List<Point> endEparallel = new List<Point>();
-        public List<KeyValuePair<List<Point>, List<Point>>> fusion = new List<KeyValuePair<List<Point>, List<Point>>>();
-
+        //public List<KeyValuePair<List<Point>, List<Point>>> fusion = new List<KeyValuePair<List<Point>, List<Point>>>();
+        public Dictionary<Point, List<Point>> fusion = new Dictionary<Point, List<Point>>();
+        //public static Dictionary<Point, List<Tuple<Point, Vector>>> Direction = new Dictionary<Point, List<Tuple<Point, Vector>>>();
         public List<int> numsofParallelResistor = new List<int>();
 
         //ĐIỆN TRỞ
@@ -124,6 +125,7 @@ namespace MoPhongThiNghiemVatLy
         private void Undo_Click(object sender, RoutedEventArgs e) => menuStrip.Undo_Click(sender, e);
         private void Redo_Click(object sender, RoutedEventArgs e) => menuStrip.Redo_Click(sender, e);
         private void Help_Click(object sender, RoutedEventArgs e) => menuStrip.Help_Click(sender, e);
+        private void Export_Click(object sender, RoutedEventArgs e) => menuStrip.Export_Click(sender, e);
 
 
         //-------------------------------------------
@@ -162,6 +164,7 @@ namespace MoPhongThiNghiemVatLy
         {
             ToolbarButton.CalculateButton_Click(CircuitCanvas, sender);
         }
+
         private void UndoClick(object sender, RoutedEventArgs e)
         {
             ToolbarButton.UndoClick();

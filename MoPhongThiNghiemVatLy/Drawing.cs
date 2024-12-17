@@ -13,11 +13,16 @@ using System.Diagnostics.Eventing.Reader;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows.Media.Animation;
 using System.Windows.Threading;
+using System.Net.NetworkInformation;
+using System.Security.Cryptography;
+using System.Diagnostics;
+using System.Net;
 
 namespace MoPhongThiNghiemVatLy
 {
     internal class Drawing
     {
+        public static Dictionary<Point, List<Tuple<Point, Vector>>> Direction= new Dictionary<Point, List<Tuple<Point, Vector>>>();
         public static void AddSourceToCanvas(Canvas canvas, double m, double n)
         {
             // Lấy kích thước của canvas
@@ -473,7 +478,14 @@ namespace MoPhongThiNghiemVatLy
                 MainWindow.Instance.Sidebar.Children.Add(grid);
             }
         }
-
+        public static System.Windows.Threading.DispatcherTimer timer;
+        public static void StopDrawingElectrons()
+        {
+            if (timer != null)
+            {
+                timer.Stop(); // Dừng timer khi cần
+            }
+        }
         public static void DrawRealElectron(Canvas CircuitCanvas, double spawnInterval)
         {
             var points = new List<Point>
@@ -486,12 +498,23 @@ namespace MoPhongThiNghiemVatLy
                 new Point(MainWindow.Instance.xNegative, MainWindow.Instance.yNegative)    // Điểm cuối đoạn 5
             };
             int insertIndex = 2; // Vị trí sau điểm xA (index 2)
-
+            var seenXCoordinates = new HashSet<double>();
             var extraPoints = new List<Point>();
             for (int i = 0; i < MainWindow.Instance.beginEparallel.Count; i++)
             {
-                extraPoints.Add(MainWindow.Instance.beginEparallel[i]);
-                extraPoints.Add(MainWindow.Instance.endEparallel[i]);
+                var beginPoint = MainWindow.Instance.beginEparallel[i];
+                var endPoint = MainWindow.Instance.endEparallel[i];
+
+                // Kiểm tra xem tọa độ X của beginPoint đã có trong seenXCoordinates chưa
+                if (!seenXCoordinates.Contains(beginPoint.X))
+                {
+                    // Nếu chưa có, thêm beginPoint và endPoint vào extraPoints
+                    extraPoints.Add(beginPoint);
+                    extraPoints.Add(endPoint);
+
+                    // Thêm tọa độ X vào HashSet để theo dõi
+                    seenXCoordinates.Add(beginPoint.X);
+                }
             }
             points.InsertRange(insertIndex + 1, extraPoints);  // Thêm vào sau xA (index 2)
 
@@ -509,7 +532,7 @@ namespace MoPhongThiNghiemVatLy
             }
 
             // Tạo Timer để liên tục sinh electron
-            var timer = new System.Windows.Threading.DispatcherTimer
+            timer = new System.Windows.Threading.DispatcherTimer
             {
                 Interval = TimeSpan.FromSeconds(spawnInterval) // Khoảng thời gian giữa mỗi electron
             };
@@ -539,12 +562,12 @@ namespace MoPhongThiNghiemVatLy
 
                 // Tạo Storyboard cho electron chính
                 var moveStoryboard = new Storyboard();
-                int tmpIndex = 0;
                 double totalDelay = 0;
                 for (int j = 1; j < points.Count; j++)
-                {
+                { 
                     var fromPoint = points[j - 1];
                     var toPoint = points[j];
+                   
                     var segmentTime = segmentLengths[j - 1] / fixedSpeed;
 
                     var moveXMain = new DoubleAnimation
@@ -561,7 +584,6 @@ namespace MoPhongThiNghiemVatLy
                         Duration = new Duration(TimeSpan.FromSeconds(segmentTime)),
                         BeginTime = TimeSpan.FromSeconds(totalDelay)
                     };
-
                     // Kiểm tra xem electron chính đến điểm nhánh song song
                     if (MainWindow.Instance.beginEparallel.Contains(fromPoint))
                     {
@@ -572,95 +594,114 @@ namespace MoPhongThiNghiemVatLy
                         {
                             Interval = parallelTriggerTime
                         };
-                        
-                        
+
                         parallelTrigger.Tick += (ssender, args) =>
                         {
                             parallelTrigger.Stop();
-
-                            // Tạo các electron trên nhánh song song
-                            for (int i = 0 ; i < MainWindow.Instance.fusion[tmpIndex].Key.Count; i++)
+                            double targetX = fromPoint.X;
+                            var keyPoints = MainWindow.Instance.fusion.Keys.Where(key => key.X == targetX).ToList();
+                            // Kiểm tra xem từ điểm này có điểm song song trong fusion không
+                            if (keyPoints.Any())
                             {
-                                var parallelPoints = new List<Point>
-                                {
-                                    fromPoint,
-                                    MainWindow.Instance.fusion[tmpIndex].Key[i],
-                                    MainWindow.Instance.fusion[tmpIndex].Value[i],
-                                    toPoint
-                                };
-                                
+                                // Chỉ hiển thị MessageBox 3 lần tối đa
+                                //if (MainWindow.Instance.MessageCount < 10)
+                                //{
+                                //    MainWindow.Instance.MessageCount++;
 
-                                var parallelElectron = new Canvas
+                                //    // Chuyển đổi các điểm thành chuỗi để hiển thị
+                                //    string keyPointsStr = string.Join(", ", keyPoints.Select(p => $"({p.X}, {p.Y})"));
+                                //    MessageBox.Show($"Key Points: ({fromPoint.X}, {fromPoint.Y})\nValue Points: {keyPointsStr}");
+                                //}
+                                // Tạo các electron trên nhánh song song
+                                for (int i = 0; i < keyPoints.Count; i++)
                                 {
-                                    Width = 10,
-                                    Height = 10,
-                                };
-                                var parallelEllipse = new Ellipse
-                                {
-                                    Width = 10,
-                                    Height = 10,
-                                    Fill = Brushes.Red,
-                                    Stroke = Brushes.Yellow,
-                                    StrokeThickness = 2
-                                };
-                                parallelElectron.Children.Add(parallelEllipse);
-                                CircuitCanvas.Children.Add(parallelElectron);
+                                    var parallelPoint = keyPoints[i];
+                                    var intermediatePoint = new Point(toPoint.X, parallelPoint.Y);
 
-                                // Tạo Storyboard cho electron song song
-                                var parallelStoryboard = new Storyboard();
-                                double parallelTotalDelay = 0;
-                                for (int k = 1; k < parallelPoints.Count; k++)
-                                {
-                                    var pFrom = parallelPoints[k - 1];
-                                    var pTo = parallelPoints[k];
-                                    var pSegmentTime = Math.Sqrt(Math.Pow(pTo.X - pFrom.X, 2) + Math.Pow(pTo.Y - pFrom.Y, 2)) / fixedSpeed;
-
-                                    var moveX = new DoubleAnimation
+                                    var parallelPoints = new List<Point>
                                     {
-                                        From = pFrom.X,
-                                        To = pTo.X,
-                                        Duration = new Duration(TimeSpan.FromSeconds(pSegmentTime)),
-                                        BeginTime = TimeSpan.FromSeconds(parallelTotalDelay)
+                                        fromPoint,  // Điểm bắt đầu
+                                        parallelPoint, // Điểm song song từ fusion
+                                        intermediatePoint,
+                                        toPoint     // Điểm cuối
                                     };
-                                    var moveY = new DoubleAnimation
+
+                                    // Tạo electron song song
+                                    var parallelElectron = new Canvas
                                     {
-                                        From = pFrom.Y,
-                                        To = pTo.Y,
-                                        Duration = new Duration(TimeSpan.FromSeconds(pSegmentTime)),
-                                        BeginTime = TimeSpan.FromSeconds(parallelTotalDelay)
+                                        Width = 10,
+                                        Height = 10,
                                     };
-                                    parallelTotalDelay += pSegmentTime;
+                                    var parallelEllipse = new Ellipse
+                                    {
+                                        Width = 10,
+                                        Height = 10,
+                                        Fill = Brushes.Red,
+                                        Stroke = Brushes.Yellow,
+                                        StrokeThickness = 2
+                                    };
+                                    parallelElectron.Children.Add(parallelEllipse);
+                                    CircuitCanvas.Children.Add(parallelElectron);
 
-                                    Storyboard.SetTarget(moveX, parallelElectron);
-                                    Storyboard.SetTargetProperty(moveX, new PropertyPath("(Canvas.Left)"));
-                                    parallelStoryboard.Children.Add(moveX);
+                                    // Tạo Storyboard cho electron song song
+                                    var parallelStoryboard = new Storyboard();
+                                    double parallelTotalDelay = 0;
 
-                                    Storyboard.SetTarget(moveY, parallelElectron);
-                                    Storyboard.SetTargetProperty(moveY, new PropertyPath("(Canvas.Top)"));
-                                    parallelStoryboard.Children.Add(moveY);
+                                    for (int k = 1; k < parallelPoints.Count; k++)
+                                    {
+                                        var pFrom = parallelPoints[k - 1];
+                                        var pTo = parallelPoints[k];
+                                        var pSegmentTime = Math.Sqrt(Math.Pow(pTo.X - pFrom.X, 2) + Math.Pow(pTo.Y - pFrom.Y, 2)) / fixedSpeed;
+
+                                        var moveX = new DoubleAnimation
+                                        {
+                                            From = pFrom.X,
+                                            To = pTo.X,
+                                            Duration = new Duration(TimeSpan.FromSeconds(pSegmentTime)),
+                                            BeginTime = TimeSpan.FromSeconds(parallelTotalDelay)
+                                        };
+                                        var moveY = new DoubleAnimation
+                                        {
+                                            From = pFrom.Y,
+                                            To = pTo.Y,
+                                            Duration = new Duration(TimeSpan.FromSeconds(pSegmentTime)),
+                                            BeginTime = TimeSpan.FromSeconds(parallelTotalDelay)
+                                        };
+                                        parallelTotalDelay += pSegmentTime;
+
+                                        Storyboard.SetTarget(moveX, parallelElectron);
+                                        Storyboard.SetTargetProperty(moveX, new PropertyPath("(Canvas.Left)"));
+                                        parallelStoryboard.Children.Add(moveX);
+
+                                        Storyboard.SetTarget(moveY, parallelElectron);
+                                        Storyboard.SetTargetProperty(moveY, new PropertyPath("(Canvas.Top)"));
+                                        parallelStoryboard.Children.Add(moveY);
+                                    }
+
+                                    parallelStoryboard.Completed += (es, eargs) =>
+                                    {
+                                        CircuitCanvas.Children.Remove(parallelElectron);
+                                    };
+                                    parallelStoryboard.Begin();
                                 }
-
-                                parallelStoryboard.Completed += (es, eargs) =>
-                                {
-                                    CircuitCanvas.Children.Remove(parallelElectron);
-                                };
-                                parallelStoryboard.Begin();
                             }
-                            tmpIndex++;
                         };
                         parallelTrigger.Start();
                     }
+                    else
+                    {
 
 
-                    Storyboard.SetTarget(moveXMain, electronContainer);
-                    Storyboard.SetTargetProperty(moveXMain, new PropertyPath("(Canvas.Left)"));
-                    moveStoryboard.Children.Add(moveXMain);
+                        Storyboard.SetTarget(moveXMain, electronContainer);
+                        Storyboard.SetTargetProperty(moveXMain, new PropertyPath("(Canvas.Left)"));
+                        moveStoryboard.Children.Add(moveXMain);
 
-                    Storyboard.SetTarget(moveYMain, electronContainer);
-                    Storyboard.SetTargetProperty(moveYMain, new PropertyPath("(Canvas.Top)"));
-                    moveStoryboard.Children.Add(moveYMain);
+                        Storyboard.SetTarget(moveYMain, electronContainer);
+                        Storyboard.SetTargetProperty(moveYMain, new PropertyPath("(Canvas.Top)"));
+                        moveStoryboard.Children.Add(moveYMain);
 
-                    totalDelay += segmentTime;
+                        totalDelay += segmentTime;
+                    }
                 }
 
 
@@ -716,7 +757,10 @@ namespace MoPhongThiNghiemVatLy
             UpdateCircuit(CircuitCanva, c);
         }
         public static void UpdateCircuit(Canvas CircuitCanvas, int c)
-        {           
+        {
+            MainWindow.Instance.beginEparallel.Clear();
+            MainWindow.Instance.endEparallel.Clear();
+            MainWindow.Instance.fusion.Clear();
             MainWindow.Instance.isSave = false;
             DeleteComponentToDraw(CircuitCanvas);
             AddSourceToCanvas(CircuitCanvas, MainWindow.Instance.m, MainWindow.Instance.n);
@@ -1035,9 +1079,8 @@ namespace MoPhongThiNghiemVatLy
             MainWindow.Instance.beginEparallel.Add(new Point(startX, yCenter));
             //thêm vô vẽ animation (điểm cuối cụm)
             MainWindow.Instance.endEparallel.Add(new Point(endX, yCenter));
-            
             double length = (n - 1) * verticalGap;
-            //Vẽ 2 đường thẳng lên tất cả điện trở (cách điện trở 1 khoảng)
+            //Vẽ 2 đường thẳng lên tất cả điện trở(cách điện trở 1 khoảng)
             var DuongTruoc = new Line
             {
                 X1 = startX,
@@ -1078,6 +1121,9 @@ namespace MoPhongThiNghiemVatLy
             MainWindow.Instance.gapRec.Add(gapRectangle);
 
             int distance = 0;
+            MainWindow.Instance.beginEparallel.Add(new Point(startX, yCenter));
+            //thêm vô vẽ animation (điểm cuối cụm)
+            MainWindow.Instance.endEparallel.Add(new Point(endX, yCenter));
             //Vẽ các line từ đường đến điện trở
             while (distance <= length)
             {
@@ -1109,13 +1155,20 @@ namespace MoPhongThiNghiemVatLy
                 distance += 50;
 
                 List<Point> tmp = new List<Point>();
-                List<Point> temp = new List<Point>(); 
+                List<Point> temp = new List<Point>();
                 //thêm vô vẽ animation (điểm đầu đoạn)
-                tmp.Add(new Point(startX, DuongFront.Y1));
-                //thêm vô vẽ animation (điểm cuối đoạn)
-                temp.Add(new Point(endX, DuongBehind.Y1));
-                MainWindow.Instance.fusion.Add(new KeyValuePair<List<Point>, List<Point>>(tmp, temp));
-
+                var keyPoint = new Point(DuongFront.X1, DuongFront.Y1);
+                var valuePoint = new Point(DuongBehind.X1, DuongBehind.Y1);
+                //MessageBox.Show($"{DuongBehind.Y1} + {DuongBehind.Y2}");
+                if (MainWindow.Instance.fusion.ContainsKey(keyPoint))
+                {
+                    MainWindow.Instance.fusion[keyPoint].Add(valuePoint);
+                }
+                else
+                {
+                    // Nếu keyPoint chưa tồn tại, thêm key mới và khởi tạo danh sách
+                    MainWindow.Instance.fusion[keyPoint] = new List<Point> { valuePoint };
+                }
             }
         }
 
@@ -1192,13 +1245,19 @@ namespace MoPhongThiNghiemVatLy
                 distance += 50;
 
 
-                List<Point> tmp = new List<Point>();
-                List<Point> temp = new List<Point>();
-                //thêm vô vẽ animation (điểm đầu đoạn)
-                tmp.Add(new Point(startX, DuongFront.Y1));
-                //thêm vô vẽ animation (điểm cuối đoạn)
-                temp.Add(new Point(endX, DuongBehind.Y1));
-                MainWindow.Instance.fusion.Add(new KeyValuePair<List<Point>, List<Point>>(tmp, temp));
+                var keyPoint = new Point(DuongFront.X1, DuongFront.Y1);
+                var valuePoint = new Point(DuongBehind.X1, DuongBehind.Y1);
+
+                // Nếu keyPoint đã tồn tại, thêm valuePoint vào danh sách
+                if (MainWindow.Instance.fusion.ContainsKey(keyPoint))
+                {
+                    MainWindow.Instance.fusion[keyPoint].Add(valuePoint);
+                }
+                else
+                {
+                    // Nếu keyPoint chưa tồn tại, thêm key mới và khởi tạo danh sách
+                    MainWindow.Instance.fusion[keyPoint] = new List<Point> { valuePoint };
+                }
             }
         }
 

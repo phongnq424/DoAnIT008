@@ -43,7 +43,11 @@
             <MenuItem Header="Open" Click="OpenFileButton_Click" Height="30" Width="40"/>
             <MenuItem Header="Save" Click="SaveFile_Click" Height="30" Width="40"/>
             <MenuItem Header="Save As" Click="SaveAsFile_Click" Height="30" Width="50"/>
-            <MenuItem Header="Edit" Height="30" Width="40">
+                <MenuItem Header="Export"
+                          Click="Export_Click"
+                          Height="30"
+                          Width="50" />
+                <MenuItem Header="Edit" Height="30" Width="40">
                 <MenuItem Header="Undo" Click="Undo_Click"/>
                 <MenuItem Header="Redo" Click="Redo_Click"/>
             </MenuItem>

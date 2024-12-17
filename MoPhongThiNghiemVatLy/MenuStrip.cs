@@ -37,13 +37,47 @@ namespace MoPhongThiNghiemVatLy
 
         //DEFINE
         private string currentFilePath = string.Empty;
+        private string currentPicturesPath = string.Empty;
 
+        public void Export_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "PNG files (*.png)|*.png|All files (*.*)|*.*",
+                Title = "Save Image File"
+            };
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                string filePath = saveFileDialog.FileName;
+                SaveCanvasAsImage(MainWindow.Instance.CircuitCanvas, filePath);
+                currentPicturesPath = filePath; 
+            }
+        }
+
+        public void SaveCanvasAsImage(Canvas canvas, string filePath)
+        {
+            RenderTargetBitmap renderTargetBitmap = new RenderTargetBitmap(
+                (int)canvas.ActualWidth,
+                (int)canvas.ActualHeight,
+                96, 
+                96,
+                PixelFormats.Pbgra32);
+            renderTargetBitmap.Render(canvas);
+            PngBitmapEncoder pngEncoder = new PngBitmapEncoder();
+            pngEncoder.Frames.Add(BitmapFrame.Create(renderTargetBitmap));
+            using (FileStream fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                pngEncoder.Save(fileStream);
+            }
+
+            MessageBox.Show("Canvas saved as image!");
+        }
 
         public void New_Click(object sender, RoutedEventArgs e)
         {
             if (MainWindow.Instance.isSave == false)
             {
-                // Hiển thị MessageBox để hỏi người dùng có muốn lưu không
                 MessageBoxResult result = MessageBox.Show(
                     "muốn lưu lại kết quả không nhóc?",
                     "Thông báo",
@@ -79,7 +113,7 @@ namespace MoPhongThiNghiemVatLy
             newWindow.Show();
 
         }
-
+        
         public void OpenFileButton_Click(object sender, RoutedEventArgs e)
         {
             if (MainWindow.Instance.isSourceAdded == true)
